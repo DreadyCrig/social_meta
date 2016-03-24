@@ -115,6 +115,7 @@ class Social_meta_tab {
            'field_text_direction' => 'ltr',
            'field_type' => 'text',
        	);
+/*
         $settings[] = array(
            'field_id' => 'fbauthor',
            'field_data' => $fbauthor,
@@ -130,6 +131,7 @@ class Social_meta_tab {
            'field_text_direction' => 'ltr',
            'field_type' => 'text',
        	);
+*/
         $settings[] = array(
            'field_id' => 'fbdescription',
            'field_data' => $fbdescription,

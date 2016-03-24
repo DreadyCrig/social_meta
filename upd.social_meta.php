@@ -124,7 +124,7 @@ class Social_meta_upd {
 
         // insert default config
         $this->EE->db->insert('social_meta_config', array(
-            'template' => "<meta property=\"og:site_name\" content=\"{site_name}\" />\n<meta property=\"og:title\" content=\"{fbtitle}\" />\n<meta property=\"og:type\" content=\"{fbtype}\" />\n<meta property=\"og:description\" content=\"{fbdescription}\" />\n<meta property=\"og:image\" content=\"{fbimage}\" />\n<meta property=\"og:url\" content=\"{canonical_url}\" />\n<meta name=\"twitter:title\" content=\"{twtitle}\" />\n<meta name=\"twitter:card\" content=\"{twtype}\" />\n<meta name=\"twitter:description\" content=\"{twdescription}\" />\n<meta name=\"twitter:image\" content=\"{twimage}\" />\n<meta name=\"twitter:url\" content=\"{canonical_url}\" />\n<meta property=\"article:author\" content=\"{fbauthor}\" />\n<meta property=\"fb:app_id\" content=\"{fbappid}\" />\n",
+            'template' => "<meta property=\"og:site_name\" content=\"{site_name}\" />\n<meta property=\"og:title\" content=\"{fbtitle}\" />\n<meta property=\"og:type\" content=\"{fbtype}\" />\n<meta property=\"og:description\" content=\"{fbdescription}\" />\n<meta property=\"og:image\" content=\"{fbimage}\" />\n<meta property=\"og:url\" content=\"{canonical_url}\" />\n<meta name=\"twitter:title\" content=\"{twtitle}\" />\n<meta name=\"twitter:card\" content=\"{twtype}\" />\n<meta name=\"twitter:description\" content=\"{twdescription}\" />\n<meta name=\"twitter:image\" content=\"{twimage}\" />\n<meta name=\"twitter:url\" content=\"{canonical_url}\" />\n<meta property=\"fb:app_id\" content=\"{fbappid}\" />\n",
             'site_id' => $site_id,
         ));
 
