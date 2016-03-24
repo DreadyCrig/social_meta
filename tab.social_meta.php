@@ -196,9 +196,9 @@ class Social_meta_tab {
            		'photo'		=> 'Photo',
            		'video'		=> 'Video',
            		'product'	=> 'Product',
-           		'app'		=> 'App',
-           		'gallery'	=> 'Gallery',
-           		'large version' => 'Large Version',
+//           		'app'		=> 'App',
+//           		'gallery'	=> 'Gallery',
+//           		'large version' => 'Large Version',
            	),
        	);
         $settings[] = array(
