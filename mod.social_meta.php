@@ -47,7 +47,8 @@ class Social_meta {
                 	'twtype'		=>	htmlspecialchars($social_meta_entry->twtype, ENT_QUOTES),
                 	'twdescription'	=>	htmlspecialchars($social_meta_entry->twdescription, ENT_QUOTES),
                 	'twimage'		=>	$this->get_url_from_filedir_id($social_meta_entry->twimage),
-                	'canonical_url'	=> $this->EE->functions->fetch_current_uri(),
+// FUTURE: make use of trailing slash an option for the module
+                	'canonical_url'	=>	$this->EE->functions->fetch_current_uri().'/',
                 );
                 $got_values = TRUE;
             }
@@ -68,7 +69,7 @@ class Social_meta {
         $this->return_data = $this->EE->TMPL->parse_variables_row($tagdata, $vars);
         
         // also check the return data for items that were empty and should not be in the output
-        $pattern='`(<meta.+\/?\>[\r\n]+)`isU';
+        $pattern='`(<meta.+\/?\>)`isU';
         if(preg_match_all($pattern,$this->return_data,$m)){
         	foreach($m[0] as $tag){
         		if(preg_match('`content=(\'|\"){2}`i', $tag)){
